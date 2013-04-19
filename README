@@ -73,3 +73,7 @@ Additional Information
 Generating a keytab with an HTTP SPN will be specific to your environment. As
 with many things, ask your local administrators or try examples on Google until
 you find something that works.
+
+Specific Needs
+--------------
+I needed this module to forward kerberos token to my application so I have removed a call to ngx_http_auth_spnego_set_bogus_authorization to keep sending Negotiate in the headers.
